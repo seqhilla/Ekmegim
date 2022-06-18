@@ -11,8 +11,8 @@ namespace DataAccesLayer.Concrete
             optionsBuilder.UseSqlServer(db.ConnectingString);
         }
 
-        public DbSet<Blog> Blogs { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Blog>? Blogs { get; set; }
+        public DbSet<Category>? Categories { get; set; }
 
     }
 }
