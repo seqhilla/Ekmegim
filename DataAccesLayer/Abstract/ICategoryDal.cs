@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataAccesLayer.Abstract
 {
-    public interface ICategoryDal
+    public interface ICategoryDal : IGenericDal<Category>
     {
-        List<Category> TumKategorileriGetir();
-        void KategoriEkle(Category category);
-        void KategoriSil(Category category);
-        void KategoriGuncelle(Category category);
-        Category GetByID(int id);
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccesLayer.Abstract
 {
-    internal interface IGenericDal<T> where T : class
+    public interface IGenericDal<T> where T : class
     {
         List<T> HepsiniGetir();
         void Ekle(T t);
